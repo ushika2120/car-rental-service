@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DriveGo - მანქანების ქირაობის თანამედროვე სერვისი"
+    />
+    <title>DriveGo | მანქანების გაქირავება</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Georgian:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="logo">
+          <span class="logo-mark">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M5 11l1.5-4.5A2 2 0 018.4 5h7.2a2 2 0 011.9 1.5L19 11a2 2 0 011 1.7V17a1 1 0 01-1 1h-1a2 2 0 01-4 0h-4a2 2 0 01-4 0H5a1 1 0 01-1-1v-4.3A2 2 0 015 11zm3-4l-1.2 4h10.4L16 7H8z"
+              />
+            </svg>
+          </span>
+          DriveGo
+        </a>
+        <nav class="nav">
+          <a href="#fleet">ავტოპარკი</a>
+          <a href="#why">უპირატესობები</a>
+          <a href="#booking">დაჯავშნა</a>
+          <a href="#contact">კონტაქტი</a>
+        </nav>
+        <a href="#booking" class="btn btn-sm">დაჯავშნე ახლავე</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-inner">
+          <span class="badge">ახალი ელექტრო მოდელები ავტოპარკში</span>
+          <h1>იქირავე სრულყოფილი მანქანა <span>წუთებში</span></h1>
+          <p>
+            სამგზავრო, ელექტრო და სატვირთო ავტომობილები გამჭვირვალე ფასებით,
+            ფასდაკლებებით გრძელვადიან ქირაობაზე და კორპორატიული პირობებით.
+          </p>
+          <div class="hero-actions">
+            <a href="#fleet" class="btn">ავტოპარკის ნახვა</a>
+            <a href="#booking" class="btn btn-ghost">დაჯავშნა</a>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <strong id="stat-total">0</strong><span>ავტომობილი</span>
+            </div>
+            <div class="stat">
+              <strong id="stat-electric">0</strong><span>ელექტრო</span>
+            </div>
+            <div class="stat">
+              <strong>20%</strong><span>ფასდაკლება 30+ დღეზე</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="fleet">
+        <div class="container">
+          <div class="section-head">
+            <h2>ჩვენი ავტოპარკი</h2>
+            <p>აირჩიე ავტომობილი შენი საჭიროების მიხედვით.</p>
+          </div>
+          <div class="filters" id="filters">
+            <button class="chip active" data-filter="all">ყველა</button>
+            <button class="chip" data-filter="passenger">სამგზავრო</button>
+            <button class="chip" data-filter="electric">ელექტრო</button>
+            <button class="chip" data-filter="van">სატვირთო</button>
+          </div>
+          <div class="grid" id="catalog"></div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="why">
+        <div class="container">
+          <div class="section-head">
+            <h2>რატომ DriveGo</h2>
+            <p>
+              მარტივი პროცესი, სანდო სერვისი და ფასები, რომლებიც წინასწარ იცი.
+            </p>
+          </div>
+          <div class="features">
+            <div class="feature">
+              <div class="icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+              </div>
+              <h3>სწრაფი დაჯავშნა</h3>
+              <p>
+                ავტომობილის არჩევა და დაჯავშნა რამდენიმე წამში, თავისუფალი
+                თარიღების ავტომატური შემოწმებით.
+              </p>
+            </div>
+            <div class="feature">
+              <div class="icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20.6 13.4l-7.2 7.2a2 2 0 01-2.8 0L3 13V3h10l7.6 7.6a2 2 0 010 2.8z"
+                  />
+                  <circle cx="7.5" cy="7.5" r="1.2" />
+                </svg>
+              </div>
+              <h3>ჭკვიანი ფასდაკლებები</h3>
+              <p>
+                10% ფასდაკლება 7+ დღეზე და 20% - 30+ დღეზე. კორპორატიულ
+                კლიენტებს დამატებით 5%.
+              </p>
+            </div>
+            <div class="feature">
+              <div class="icon">
+                <svg viewBox="0 0 24 24">
+                  <rect x="5" y="11" width="14" height="10" rx="2" />
+                  <path d="M8 11V7a4 4 0 018 0v4" />
+                </svg>
+              </div>
+              <h3>მონაცემთა დაცვა</h3>
+              <p>
+                მართვის მოწმობისა და დაზღვევის მონაცემები არასდროს ჩანს საჯარო
+                დასტურში.
+              </p>
+            </div>
+            <div class="feature">
+              <div class="icon">
+                <svg viewBox="0 0 24 24">
+                  <rect x="2" y="7" width="17" height="10" rx="2" />
+                  <path d="M22 11v2M10 9l-2 3h4l-2 3" />
+                </svg>
+              </div>
+              <h3>ელექტრო ფლოტი</h3>
+              <p>
+                თანამედროვე ელექტრომობილები მკაფიოდ მითითებული ბატარეით და
+                დამტენის ტიპით.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="booking">
+        <div class="container">
+          <div class="section-head">
+            <h2>დაჯავშნა</h2>
+            <p>შეავსე ფორმა და მიიღე დასტური დაუყოვნებლივ.</p>
+          </div>
+          <div class="booking-layout">
+            <div class="panel">
+              <h3>ახალი ჯავშანი</h3>
+              <form id="booking-form" novalidate>
+                <div class="form-grid">
+                  <div class="field full">
+                    <label for="vehicle">ავტომობილი</label>
+                    <select id="vehicle"></select>
+                  </div>
+                  <div class="field">
+                    <label for="start">დაწყება</label>
+                    <input id="start" type="date" required />
+                  </div>
+                  <div class="field">
+                    <label for="end">დასრულება</label>
+                    <input id="end" type="date" required />
+                  </div>
+                  <div class="field full">
+                    <label for="customer">სახელი და გვარი</label>
+                    <input
+                      id="customer"
+                      placeholder="გიორგი გიორგაძე"
+                      required
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="license">მართვის მოწმობის სერია</label>
+                    <input id="license" placeholder="AB123456" required />
+                  </div>
+                  <div class="field">
+                    <label for="policy">დაზღვევის პოლისის ტოკენი</label>
+                    <input id="policy" placeholder="POL-XXXX" required />
+                  </div>
+                  <label class="check full"
+                    ><input type="checkbox" id="is-corporate" /> კორპორატიული
+                    ჯავშანი</label
+                  >
+                  <div class="corp" id="corp-fields">
+                    <div class="field">
+                      <label for="company">კომპანია</label>
+                      <input id="company" placeholder="შპს კომპანია" />
+                    </div>
+                    <div class="field">
+                      <label for="balance">კომპანიის ბალანსი ($)</label>
+                      <input
+                        id="balance"
+                        type="number"
+                        min="0"
+                        placeholder="5000"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="quote">
+                  <span id="quote-label">სავარაუდო ფასი</span
+                  ><strong id="quote">-</strong>
+                </div>
+                <p class="error" id="error" role="alert"></p>
+                <div class="form-actions">
+                  <button type="submit" class="btn">დაჯავშნე</button>
+                </div>
+              </form>
+            </div>
+            <div class="panel">
+              <h3>ჩემი ჯავშნები</h3>
+              <div class="booking-list" id="bookings"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="#top" class="logo">
+              <span class="logo-mark">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M5 11l1.5-4.5A2 2 0 018.4 5h7.2a2 2 0 011.9 1.5L19 11a2 2 0 011 1.7V17a1 1 0 01-1 1h-1a2 2 0 01-4 0h-4a2 2 0 01-4 0H5a1 1 0 01-1-1v-4.3A2 2 0 015 11zm3-4l-1.2 4h10.4L16 7H8z"
+                  />
+                </svg>
+              </span>
+              DriveGo
+            </a>
+            <p style="margin-top: 1rem">
+              მანქანების ქირაობის თანამედროვე სერვისი ფიზიკური და იურიდიული
+              პირებისთვის.
+            </p>
+          </div>
+          <div>
+            <h4>ნავიგაცია</h4>
+            <ul>
+              <li><a href="#fleet">ავტოპარკი</a></li>
+              <li><a href="#why">უპირატესობები</a></li>
+              <li><a href="#booking">დაჯავშნა</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>სერვისები</h4>
+            <ul>
+              <li>მოკლევადიანი ქირაობა</li>
+              <li>გრძელვადიანი ქირაობა</li>
+              <li>კორპორატიული გადაწყვეტა</li>
+            </ul>
+          </div>
+          <div>
+            <h4>კონტაქტი</h4>
+            <ul>
+              <li>თბილისი, საქართველო</li>
+              <li>info@drivego.example</li>
+              <li>+995 000 00 00 00</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 DriveGo. ყველა უფლება დაცულია.</span>
+          <span>კონფიდენციალურობა · წესები და პირობები</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="dist/main.js"></script>
+  </body>
+</html>
